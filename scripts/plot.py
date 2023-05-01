@@ -30,9 +30,17 @@ ax.set_xlabel('R')
 ax.set_ylabel('PHI')
 ax.set_zlabel('E')
 
-# Draw a contour graph projected on the XY plane
-levels = np.linspace(Z.min(), Z.max(), 50)
-plt.contour(X, Y, Z, levels=levels, cmap='binary', alpha=0.5, zorder=10)
+if os.path.exists('plot/plot.pdf'):
+    os.remove('plot/plot.pdf')
+if os.path.exists('plot/plot.png'):
+    os.remove('plot/plot.png')
+
+# Plotting curve in xy-plane
+plt.plot(x, y, "k", zorder = 3)
+
+# Save the plot in PDF and PNG
+plt.savefig('plot/plot.pdf', dpi=300, bbox_inches='tight')
+plt.savefig('plot/plot.png', dpi=300, bbox_inches='tight')
 
 # Show the plot
 plt.show()
