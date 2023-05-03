@@ -30,6 +30,7 @@ ax.set_xlabel('R')
 ax.set_ylabel('PHI')
 ax.set_zlabel('E')
 
+# Delete the existing files from previous runs
 if os.path.exists('plot/plot.pdf'):
     os.remove('plot/plot.pdf')
 if os.path.exists('plot/plot.png'):
