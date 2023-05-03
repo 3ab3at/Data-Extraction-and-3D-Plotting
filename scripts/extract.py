@@ -2,8 +2,8 @@ import re
 import sys,os
 sys.path.append(os.path.realpath('..'))
 
-# Defining the enery reference for easier changing among different files
-E_ref = 50.95273764
+# Defining the energy reference for easier changing among different files
+E_ref = 47.63700381
 
 # Open input and output files
 with open('input_file.txt', 'r') as infile, open('data/DMF_extracted.txt', 'w') as outfile1, open('scripts/radius_post_extraction.txt', 'w') as outfile2, open('data/angle_extracted.txt', 'w') as outfile3:

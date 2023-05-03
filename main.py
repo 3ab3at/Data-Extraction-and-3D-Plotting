@@ -12,4 +12,7 @@ subprocess.run(['python3', 'scripts/dup.py'])
 subprocess.run(['python3', 'scripts/merge.py'])
 
 # Run the fourth Python script
+subprocess.run(['python3', 'scripts/remove.py'])
+
+# Run the fifth Python script
 subprocess.run(['python3', 'scripts/plot.py'])
